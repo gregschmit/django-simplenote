@@ -1,0 +1,18 @@
+{% extends 'simplenote/master.html' %}
+
+{% block main %}
+<h4>Create a Note</h4>
+<form class="form-group" method="post">
+  {% csrf_token %}
+  <input type="hidden" name="next" value="{{ next }}">
+  {{ form.as_p }}
+  <input type="submit" class="button" value="Post">
+</form>
+<hr>
+<h4>Notes</h4>
+{% for note in notes reversed %}
+<div class="callout primary">
+  {{ note.content }}
+</div>
+{% endfor %}
+{% endblock %}
