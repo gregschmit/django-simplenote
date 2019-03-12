@@ -16,7 +16,7 @@
 <body>
 
   <div>
-    <div class="top-bar" style="max-width: 80em; padding: .5em;">
+    <div class="top-bar" style="max-width: 80em; padding: .5em; margin: 0 auto;">
       <div class="top-bar-center">
         <span class="h1"><a href="/">simplenote</a></span>
         <span class="h6"><a href="https://github.com/gregschmit/django-simplenote">{% get_version %}</a></span>
@@ -35,11 +35,11 @@
     {% endfor %}
   {% endif %}
 
-  <div style="max-width: 80em; padding: .5em;">
+  <div style="max-width: 80em; padding: .5em; margin: 0 auto;">
     {% block main %}{% endblock %}
   </div>
 
-  <div style="max-width: 80em; padding: .5em;">
+  <div style="max-width: 80em; padding: .5em; margin: 0 auto;">
     <hr>
     <div class="row">
       <div class="columns medium-6">
