@@ -9,15 +9,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.3/dist/css/foundation-float.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
-  <link rel="stylesheet" href="/static/css/pufsim.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.3/dist/js/foundation.min.js"></script>
 </head>
 
 <body>
 
-  <div class="pufsim-head">
-    <div class="pufsim-wrap top-bar">
+  <div>
+    <div class="top-bar" style="max-width: 80em; padding: .5em;">
       <div class="top-bar-center">
         <span class="h1"><a href="/">simplenote</a></span>
         <span class="h6"><a href="https://github.com/gregschmit/django-simplenote">{% get_version %}</a></span>
@@ -36,19 +35,18 @@
     {% endfor %}
   {% endif %}
 
-  <div class="pufsim-wrap">
+  <div style="max-width: 80em; padding: .5em;">
     {% block main %}{% endblock %}
   </div>
 
-  <div class="pufsim-wrap">
+  <div style="max-width: 80em; padding: .5em;">
     <hr>
     <div class="row">
       <div class="columns medium-6">
-        <p>Copyright 2018, Gregory N. Schmit</p>
+        <p>Copyright 2019, Gregory N. Schmit</p>
       </div>
       <div class="columns medium-6 text-right">
-        <p><a href="https://github.com/gregschmit/puflib">https://github.com/gregschmit/puflib</a></p>
-        <p><a href="https://github.com/gregschmit/django-pufsim">https://github.com/gregschmit/django-pufsim</a></p>
+        <p><a href="https://github.com/gregschmit/django-simplenote">https://github.com/gregschmit/django-simplenote</a></p>
       </div>
     </div>
   </div>
