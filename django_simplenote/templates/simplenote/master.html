@@ -24,17 +24,6 @@
     </div>
   </div>
 
-  {% if messages %}
-    {% for m in messages %}
-      <div class="callout small text-center {{ m.tags }}" data-closable>
-        <span>{{ m }}</span>
-        <button class="close-button small" style="line-height: .8" aria-label="Dismiss alert" type="button" data-close>
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-    {% endfor %}
-  {% endif %}
-
   <div style="max-width: 80em; padding: .5em; margin: 0 auto;">
     {% block main %}{% endblock %}
   </div>
